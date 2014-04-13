@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SwipeSelection' target in the 'SwipeSelection' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

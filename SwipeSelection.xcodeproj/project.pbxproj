@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1439E4018F76D140066B69B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1439E3F18F76D140066B69B /* Foundation.framework */; };
+		A1439E4B18F76D140066B69B /* SwipeSelection.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1439E4A18F76D140066B69B /* SwipeSelection.mm */; };
+		A1439E5618F76D400066B69B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1439E5518F76D400066B69B /* UIKit.framework */; };
+		A1439E5818F76D4A0066B69B /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1439E5718F76D4A0066B69B /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1439E3C18F76D140066B69B /* SwipeSelection.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SwipeSelection.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1439E3F18F76D140066B69B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1439E4418F76D140066B69B /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		A1439E4518F76D140066B69B /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		A1439E4718F76D140066B69B /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		A1439E4818F76D140066B69B /* SwipeSelection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeSelection-Prefix.pch"; sourceTree = "<group>"; };
+		A1439E4918F76D140066B69B /* SwipeSelection.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SwipeSelection.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A1439E4A18F76D140066B69B /* SwipeSelection.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SwipeSelection.mm; sourceTree = "<group>"; };
+		A1439E5518F76D400066B69B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1439E5718F76D4A0066B69B /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/theos/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		A1FDA03F18FADD3E00A86CD7 /* SwipeSelection.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = SwipeSelection.plist; path = "../../../../Downloads/SwipeSelection-master/SwipeSelection.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1439E3818F76D140066B69B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1439E5818F76D4A0066B69B /* libsubstrate.dylib in Frameworks */,
+				A1439E5618F76D400066B69B /* UIKit.framework in Frameworks */,
+				A1439E4018F76D140066B69B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1439E3118F76D140066B69B = {
+			isa = PBXGroup;
+			children = (
+				A1439E4118F76D140066B69B /* SwipeSelection */,
+				A1439E3E18F76D140066B69B /* Frameworks */,
+				A1439E3D18F76D140066B69B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1439E3D18F76D140066B69B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E3C18F76D140066B69B /* SwipeSelection.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1439E3E18F76D140066B69B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E5718F76D4A0066B69B /* libsubstrate.dylib */,
+				A1439E5518F76D400066B69B /* UIKit.framework */,
+				A1439E3F18F76D140066B69B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1439E4118F76D140066B69B /* SwipeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E4918F76D140066B69B /* SwipeSelection.xm */,
+				A1439E4A18F76D140066B69B /* SwipeSelection.mm */,
+				A1439E4218F76D140066B69B /* Package */,
+				A1439E4618F76D140066B69B /* Supporting Files */,
+			);
+			path = SwipeSelection;
+			sourceTree = "<group>";
+		};
+		A1439E4218F76D140066B69B /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E4318F76D140066B69B /* DEBIAN */,
+				A1439E4C18F76D140066B69B /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		A1439E4318F76D140066B69B /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E4418F76D140066B69B /* control.txt */,
+				A1439E4518F76D140066B69B /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		A1439E4618F76D140066B69B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E4718F76D140066B69B /* PackageVersion.plist */,
+				A1439E4818F76D140066B69B /* SwipeSelection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1439E4C18F76D140066B69B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E4D18F76D140066B69B /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A1439E4D18F76D140066B69B /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				A1439E4E18F76D140066B69B /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		A1439E4E18F76D140066B69B /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				A1FDA03F18FADD3E00A86CD7 /* SwipeSelection.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A1439E3918F76D140066B69B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A1439E3B18F76D140066B69B /* SwipeSelection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1439E5218F76D140066B69B /* Build configuration list for PBXNativeTarget "SwipeSelection" */;
+			buildPhases = (
+				A1439E3618F76D140066B69B /* ShellScript */,
+				A1439E3718F76D140066B69B /* Sources */,
+				A1439E3818F76D140066B69B /* Frameworks */,
+				A1439E3918F76D140066B69B /* Headers */,
+				A1439E3A18F76D140066B69B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeSelection;
+			productName = SwipeSelection;
+			productReference = A1439E3C18F76D140066B69B /* SwipeSelection.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1439E3218F76D140066B69B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = A1439E3518F76D140066B69B /* Build configuration list for PBXProject "SwipeSelection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1439E3118F76D140066B69B;
+			productRefGroup = A1439E3D18F76D140066B69B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1439E3B18F76D140066B69B /* SwipeSelection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1439E3618F76D140066B69B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		A1439E3A18F76D140066B69B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1439E3718F76D140066B69B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1439E4B18F76D140066B69B /* SwipeSelection.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1439E5018F76D140066B69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		A1439E5118F76D140066B69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		A1439E5318F76D140066B69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeSelection/SwipeSelection-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		A1439E5418F76D140066B69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeSelection/SwipeSelection-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1439E3518F76D140066B69B /* Build configuration list for PBXProject "SwipeSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1439E5018F76D140066B69B /* Debug */,
+				A1439E5118F76D140066B69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1439E5218F76D140066B69B /* Build configuration list for PBXNativeTarget "SwipeSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1439E5318F76D140066B69B /* Debug */,
+				A1439E5418F76D140066B69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1439E3218F76D140066B69B /* Project object */;
+}
