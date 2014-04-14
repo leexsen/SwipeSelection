@@ -229,7 +229,7 @@ UITextPosition *KH_MovePositionDirection(id <UITextInput, UITextInputTokenizer> 
     }
     return nil;
 }
-
+/*
 UITextPosition *KH_tokenizerMovePositionWithGranularitInDirection(id <UITextInput, UITextInputTokenizer> tokenizer, UITextPosition *startPosition, UITextGranularity granularity, UITextDirection direction){
     
     if (tokenizer && startPosition) {
@@ -238,7 +238,7 @@ UITextPosition *KH_tokenizerMovePositionWithGranularitInDirection(id <UITextInpu
     
     return nil;
 }
-
+*/
 BOOL KH_positionsSame(id <UITextInput, UITextInputTokenizer> tokenizer, UITextPosition *position1, UITextPosition *position2){
     return ([tokenizer comparePosition:position1 toPosition:position2] == NSOrderedSame);
 }
