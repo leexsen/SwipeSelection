@@ -706,17 +706,6 @@ static BOOL isMoreKey = NO;
 	isMoreKey = NO;
 }
 
-
-
-// Old approach, keep incase the next one breaks anything
-//-(BOOL)isShiftKeyBeingHeld {
-//	if (shiftByOtherKey) {
-//		return YES;
-//	}
-//
-//	return %orig;
-//}
-
 %new
 -(BOOL)SS_shouldSelect{
 	return ([self isShiftKeyBeingHeld] || shiftByOtherKey);
@@ -744,12 +733,8 @@ static BOOL isMoreKey = NO;
 
 // Legacy support (doesn't effect iOS 7 + so harmless leaving in & helps iOS 6)
 -(void)handleDelete {
-	if (!isLongPressed && isDeleteKey) {
-		
-	}
-	else {
-		%orig;
-	}
+    if (isLongPressed || !isDeleteKey)
+        %orig;
 }
 
 -(void)handleDeleteAsRepeat:(BOOL)repeat executionContext:(UIKeyboardTaskExecutionContext*)executionContext{
