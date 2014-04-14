@@ -10,7 +10,7 @@
 		A1439E4018F76D140066B69B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1439E3F18F76D140066B69B /* Foundation.framework */; };
 		A1439E4B18F76D140066B69B /* SwipeSelection.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1439E4A18F76D140066B69B /* SwipeSelection.mm */; };
 		A1439E5618F76D400066B69B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1439E5518F76D400066B69B /* UIKit.framework */; };
-		A1439E5818F76D4A0066B69B /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1439E5718F76D4A0066B69B /* libsubstrate.dylib */; };
+		A1D01CE418FCA2C200AFEB26 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D01CE318FCA2C200AFEB26 /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		A1439E4918F76D140066B69B /* SwipeSelection.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SwipeSelection.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A1439E4A18F76D140066B69B /* SwipeSelection.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SwipeSelection.mm; sourceTree = "<group>"; };
 		A1439E5518F76D400066B69B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A1439E5718F76D4A0066B69B /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/theos/lib/libsubstrate.dylib; sourceTree = "<group>"; };
-		A1FDA03F18FADD3E00A86CD7 /* SwipeSelection.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = SwipeSelection.plist; path = "../../../../Downloads/SwipeSelection-master/SwipeSelection.plist"; sourceTree = "<group>"; };
+		A1D01CE318FCA2C200AFEB26 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		A1D01CE518FCA42E00AFEB26 /* SwipeSelection.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = SwipeSelection.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/SwipeSelection.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1439E5818F76D4A0066B69B /* libsubstrate.dylib in Frameworks */,
+				A1D01CE418FCA2C200AFEB26 /* libsubstrate.dylib in Frameworks */,
 				A1439E5618F76D400066B69B /* UIKit.framework in Frameworks */,
 				A1439E4018F76D140066B69B /* Foundation.framework in Frameworks */,
 			);
@@ -61,7 +61,7 @@
 		A1439E3E18F76D140066B69B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1439E5718F76D4A0066B69B /* libsubstrate.dylib */,
+				A1D01CE318FCA2C200AFEB26 /* libsubstrate.dylib */,
 				A1439E5518F76D400066B69B /* UIKit.framework */,
 				A1439E3F18F76D140066B69B /* Foundation.framework */,
 			);
@@ -125,7 +125,7 @@
 		A1439E4E18F76D140066B69B /* DynamicLibraries */ = {
 			isa = PBXGroup;
 			children = (
-				A1FDA03F18FADD3E00A86CD7 /* SwipeSelection.plist */,
+				A1D01CE518FCA42E00AFEB26 /* SwipeSelection.plist */,
 			);
 			name = DynamicLibraries;
 			sourceTree = "<group>";
@@ -296,6 +296,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/theos/lib,
+					/opt/iOSOpenDev/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
@@ -320,6 +321,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/theos/lib,
+					/opt/iOSOpenDev/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
